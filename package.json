@@ -1,0 +1,30 @@
+{
+  "name": "@snow-the/dsh-ssh",
+  "version": "0.1.0",
+  "description": "Native agent-facing SSH tools for DeepSeek Harness: list/exec/upload/download/tunnel/cluster over the OpenSSH CLI, with the host list owned by ~/.dsh/ssh/hosts.json.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "ssh",
+    "deepseek-harness"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.2.1-rc.5"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  }
+}

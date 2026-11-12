@@ -1,0 +1,6 @@
+# dsh-ssh bundle layer: native agent-facing SSH tools (host-side only, no GUI).
+# The rows MUST stay inside `- insert:`; a bare `- id:` would be read as a patch
+# for an existing loader entry and fail with `patch: entry "snow-ssh" not found`.
+- insert:
+    - id: snow-ssh
+      name: '@snow-the/dsh-ssh'
